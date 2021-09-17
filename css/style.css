@@ -487,6 +487,30 @@ template {
   font-size: 14px;
 }
 
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 0 19px;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb-list__link::after {
+  content: " /";
+  padding-right: 3px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
