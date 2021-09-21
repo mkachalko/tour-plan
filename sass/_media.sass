@@ -49,7 +49,6 @@
   .navbar-top
     &__search, &__user
       display: none
-
   .menu-button
     display: flex
     align-items: center
@@ -66,6 +65,24 @@
       background-color: $text-color
   .navbar-bottom
     display: none
+  .hotel-info
+    padding-top: 5px
+    &__text
+      width: 100%
+    &__offer
+      order: -1
+    &__name
+      width: 100%
+      margin-right: 0
+      margin-top: 10px
+    &__stars
+      margin: 0
+    &__rating
+      display: none
+  .hotel-wrapper
+    justify-content: space-between
+  .stars
+    width: auto
 @media (max-width: 480px) and (min-width: 320px)
   .logo
     width: 99px
