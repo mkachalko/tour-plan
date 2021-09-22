@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -100,8 +101,35 @@
         </div>
 
       </div>
+
+      <div class="hotel-grid">
+        <div class="slider">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="slider__image" src="img/slide-1.jpg" alt="The pool area">
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__image" src="img/slide-2.jpg" alt="Snorkeling">
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__image" src="img/slide-3.jpg" alt="Houses on the water">
+              </div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button_prev"></button>
+            <button class="slider-button slider-button_next"></button>
+          
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
