@@ -9,5 +9,8 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider-button_prev',
   },
   
- 
+  keyboard: {
+    enablet: 'true'
+  }
+
 });
