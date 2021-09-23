@@ -39,9 +39,15 @@
     &_prev
       left: 16px
       background-image: url(../img/arrow-prev.svg)
+.hotel-grid
+  &__wrapper
+    width: 350px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .booking
   padding: 29px 29px 26px 26px
-  width: 350px
+  width: 100%
   min-height: 210px
   font-family: 'Nunito', sans-serif
   color: $light
@@ -103,3 +109,6 @@
     font-size: 12px
     line-height: 16px
     transform: translateY(-4px)
+.map
+  border-radius: 10px
+  overflow: hidden

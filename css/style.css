@@ -677,9 +677,23 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.hotel-grid__wrapper {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .booking {
   padding: 29px 29px 26px 26px;
-  width: 350px;
+  width: 100%;
   min-height: 210px;
   font-family: 'Nunito', sans-serif;
   color: #ffffff;
@@ -793,6 +807,11 @@ template {
   line-height: 16px;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1199.98px) {
