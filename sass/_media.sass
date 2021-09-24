@@ -42,6 +42,10 @@
   .booking, .map
     width: 340px
     height: 210px
+  .subscription
+    padding: 92px 0 93px
+    &__wrapper
+      width: 100%
 
 @media (max-width: 767.98px)
   .container
@@ -95,13 +99,28 @@
     width: auto
   .slider
     height: 400px
-
   .booking, .map
     width: 100%
+  .subscription
+    &__wrapper
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      margin-bottom: 37px
 
 @media (max-width: 575.98px)
   .slider
     height: 320px
+  .subscription
+    padding: 76px 0 83px
+    &__title
+      font-size: 20px
+      line-height: 25px
+    &__strong
+      font-size: 30px
+      line-height: 38px
+    &__form
+      width: 100%
 
 @media (max-width: 480px) and (min-width: 320px)
   .navbar-top
