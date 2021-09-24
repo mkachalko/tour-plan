@@ -46,6 +46,22 @@
     padding: 92px 0 93px
     &__wrapper
       width: 100%
+  .reviews
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-swiper
+      &__item
+        width: 579px
+        &::before,
+        &::after
+          display: none
+      &__button
+        transform: translateY(-50%)
+    &__text
+      padding: 0
 
 @media (max-width: 767.98px)
   .container
@@ -107,6 +123,25 @@
       align-items: flex-start
     &__title
       margin-bottom: 37px
+  .reviews
+    padding-bottom: 50px
+    &__title
+      margin: 0 auto 42px
+      max-width: 245px
+      font-size: 18px
+      line-height: 23px
+    &-swiper
+      &__item
+        padding-right: 29px
+        padding-bottom: 36px
+        padding-left: 33px
+        width: 100%
+      &__button
+        top: 45px
+        &_prev
+          left: 34px
+        &_next
+          right: 37px
 
 @media (max-width: 575.98px)
   .slider
