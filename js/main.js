@@ -31,3 +31,8 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   }
 
 });
+
+$('.subscription').parallax({
+  imageSrc: '../img/bg-subscription.jpg',
+  speed: 0.5
+});
