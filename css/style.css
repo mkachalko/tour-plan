@@ -817,6 +817,181 @@ template {
   overflow: hidden;
 }
 
+.packages {
+  padding: 40px 0 70px;
+}
+
+.packages-shell {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 110px 1fr;
+      grid-template-rows: 110px 1fr;
+}
+
+.packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.packages-stars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10px)[5] 1fr;
+      grid-template-columns: repeat(5, 10px) 1fr;
+  -ms-grid-rows: 13px;
+      grid-template-rows: 13px;
+}
+
+.packages__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.packages__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  max-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages__item:first-child {
+  grid-column: span 2;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.packages__offer {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 4px 9px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.packages__offer_first {
+  padding: 8px 21px 7px 11px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-card {
+  padding: 30px 21px 30px 32px;
+  display: -ms-grid;
+  display: grid;
+  background-color: #0A223D;
+  color: #ffffff;
+}
+
+.packages-card_first {
+  padding: 46px 21px 30px 46px;
+}
+
+.packages-card__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.packages-card__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card__description {
+  display: -ms-grid;
+  display: grid;
+}
+
+.packages-card__image {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.packages-card__price-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.packages-card__price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 23px 1fr;
+      grid-template-rows: 23px 1fr;
+}
+
+.packages-card__old-price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card__new-price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card__button {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 120px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
 .subscription {
   position: relative;
   padding: 98px 0 87px;
@@ -1164,6 +1339,9 @@ template {
     width: 230px;
     height: 230px;
   }
+  .packages-wrapper {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1265,6 +1443,23 @@ template {
   .card-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .packages {
+    padding-top: 20px;
+  }
+  .packages-shell {
+    -ms-grid-rows: 80px 1fr;
+        grid-template-rows: 80px 1fr;
+  }
+  .packages-wrapper {
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .packages__title {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
@@ -1391,6 +1586,37 @@ template {
   .reviews-swiper__button_next {
     right: 37px;
   }
+  .packages-wrapper {
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages__item {
+    max-height: 350px;
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .packages__item:first-child {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  .packages__text {
+    display: none;
+  }
+  .packages-card__price-block {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages-card__button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -1454,6 +1680,49 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .packages-shell {
+    -ms-grid-rows: 50px 1fr;
+        grid-template-rows: 50px 1fr;
+  }
+  .packages__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .packages__item {
+    max-height: 500px;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages__item:first-child {
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages-card_first {
+    padding: 30px 21px 30px 32px;
+  }
+  .packages-card__price-block {
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .packages-card__description {
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
+  .packages-card__guests {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
@@ -1471,6 +1740,16 @@ template {
   }
   .hotel-info__stars {
     margin-right: 16px;
+  }
+  .packages-card__description {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .packages-card__guests {
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 /*# sourceMappingURL=style.css.map */

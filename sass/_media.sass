@@ -9,6 +9,9 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      gap: 20px
 
 @media (max-width: 991.98px)
   .container
@@ -76,6 +79,16 @@
     height: 255px
     &-wrapper
       flex-wrap: wrap
+  .packages
+    padding-top: 20px
+    &-shell
+      grid-template-rows: 80px 1fr
+    &-wrapper
+      grid-template-rows: repeat(3, 1fr)
+      grid-template-columns: repeat(2, 1fr)
+    &__title
+      font-size: 30px
+      line-height: 38px
 
 @media (max-width: 767.98px)
   .container
@@ -156,6 +169,25 @@
           left: 34px
         &_next
           right: 37px
+  .packages
+    &-wrapper
+      grid-template-rows: repeat(5, 1fr)
+      grid-template-columns: 100%
+    &__item
+      max-height: 350px
+      grid-template-rows: 100%
+      grid-template-columns: 40% 60%
+      &:first-child
+        grid-column: 1
+        grid-template-columns: 40% 60%
+    &__text
+      display: none
+    &-card
+      &__price-block
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 100%
+      &__button
+        width: 100%
 
 @media (max-width: 575.98px)
   .slider
@@ -196,6 +228,32 @@
     &-wrapper
       flex-direction: column
 
+  .packages
+    &-shell
+      grid-template-rows: 50px 1fr
+    &__title
+      font-size: 18px
+      line-height: 23px
+    &__item
+      max-height: 500px
+      grid-template-rows: 50% 50%
+      grid-template-columns: 100%
+      &:first-child
+        grid-template-rows: 50% 50%
+        grid-template-columns: 100%
+    &-card
+      &_first
+        padding: 30px 21px 30px 32px
+      &__price-block
+        grid-template-rows: 100%
+        grid-template-columns: 50% 50%
+        align-items: end
+      &__description
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 60% 40%
+      &__guests
+        justify-self: end
+
 @media (max-width: 480px) and (min-width: 320px)
   .navbar-top
     padding: 28px 0
@@ -209,3 +267,10 @@
     &-info
       &__stars
         margin-right: 16px
+  .packages
+    &-card
+      &__description
+        grid-template-rows: 1fr 1fr 1fr
+        grid-template-columns: 100%
+      &__guests
+        justify-self: start
