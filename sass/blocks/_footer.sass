@@ -1,0 +1,145 @@
+.packages
+  display: none
+.footer
+  padding: 108px 0 46px
+  background-color: $dark
+  color: #BDBDBD
+  &-wrapper
+    display: grid
+    grid-template: auto auto 43px auto / minmax(24%, 285px) minmax(25%, 286px) 31% 1fr
+    row-gap: 23px
+  &__logo
+    grid-row: span 2
+    align-self: end
+    &-image
+      width: 166px
+      height: 192px
+      padding-bottom: 12px
+      padding-right: 10px
+  &__title
+    margin-top: 0
+    margin-bottom: 16px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    color: $light
+    &_inline
+      margin-bottom: 0
+  &-list
+    list-style: none
+    margin: 0
+    padding: 0
+    &__item
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+  &__categories
+    grid-row: span 2
+  &__social-networks
+    grid-column: span 2
+    display: flex
+  &__contacts
+    grid-row-start: 4
+    grid-column: span 2
+    &-form
+      grid-row-start: 4
+      grid-column-start: 3
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &-title
+      margin-top: 2px
+      margin-bottom: 35px
+  &__input
+    padding: 18px 23px 17px
+    margin-bottom: 16px
+    border-radius: 4px
+    border: none
+    min-width: 255px
+    &:focus
+      outline: none
+  &__massage
+    flex-basis: 100%
+    padding: 18px 23px
+    margin-bottom: 22px
+    max-height: 123px
+    border: none
+    border-radius: 4px
+    &:focus
+      outline: none
+  &__button
+    width: 160px
+    height: 50px
+    color: $light
+    font-weight: bold
+    background-color: $primary
+    border: none
+    cursor: pointer
+    border-radius: 4px
+  &__decryption
+    font-weight: bold
+    color: #E0E0E0
+  &__info
+    margin-top: 102px
+  &-info
+    position: relative
+    display: flex
+    justify-content: center
+    &__list
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: space-between
+      list-style: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      min-width: 283px
+    &__image
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 136px
+      height: 22px
+
+.social-networks
+  display: flex
+  justify-content: space-between
+  max-width: 293px
+  &__icons
+    display: flex
+    justify-content: space-between
+    min-width: 85px
+.contacts
+  max-width: 493px
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 160%
+  &__title
+    margin-top: 15px
+    margin-bottom: 22px
+  &__text
+    display: block
+    margin-bottom: 22px
+  &-wrapper
+    display: grid
+    grid-template-columns: 41px 1fr
+    row-gap: 21px
+  &__icon
+    padding-top: 3px
+    padding-left: 4px
+.phones
+  display: flex
+  flex-direction: column
