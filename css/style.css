@@ -390,6 +390,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -487,6 +488,10 @@ template {
 
 .nav-menu__item {
   line-height: 18px;
+}
+
+.nav-menu__item_mobile_visible {
+  display: none;
 }
 
 .nav-menu__link {
@@ -1785,11 +1790,63 @@ template {
 }
 
 @media (max-width: 767.98px) {
+  body {
+    margin-top: 70px;
+  }
   .container {
     width: 88%;
   }
-  .navbar-top__search, .navbar-top__user {
+  .header-top_mobile_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .header-bottom_mobile_hidden {
     display: none;
+  }
+  .header-bottom_mobile_visible {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  .navbar-top__search_mobile_hidden, .navbar-top__user_mobile_hidden {
+    display: none;
+  }
+  .navbar-top__search {
+    margin-bottom: 19px;
+    margin-right: 0;
+  }
+  .navbar-top__user {
+    margin-bottom: 7px;
+  }
+  .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user__name_light {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .search__input {
+    width: 245px;
+  }
+  .navbar-top__search_mobile_hidden, .navbar-top__user_mobile_hidden {
+    display: none;
+  }
+  .nav-menu__item_mobile_visible {
+    display: block;
   }
   .menu-button {
     display: -webkit-box;
@@ -1816,8 +1873,20 @@ template {
     height: 1px;
     background-color: #333333;
   }
-  .navbar-bottom {
-    display: none;
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-menu__item {
+    margin-bottom: 20px;
   }
   .hotel-info {
     padding-top: 5px;

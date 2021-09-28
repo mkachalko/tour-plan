@@ -31,3 +31,9 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   }
 
 });
+
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function(){
+  console.log('Клик по кнопке'),
+  document.querySelector('.header-bottom').classList.toggle('header-bottom_mobile_visible')
+});
