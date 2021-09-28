@@ -1341,10 +1341,6 @@ template {
   border-radius: 4px;
 }
 
-.packages {
-  display: none;
-}
-
 .footer {
   padding: 108px 0 46px;
   background-color: #0A223D;
