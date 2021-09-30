@@ -802,6 +802,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  cursor: pointer;
 }
 
 .price {
@@ -1197,6 +1198,7 @@ template {
   background-repeat: no-repeat;
   border: none;
   background-position: center;
+  cursor: pointer;
 }
 
 .reviews-swiper__button_prev {
@@ -1352,6 +1354,7 @@ template {
   line-height: 16px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer {
@@ -2057,7 +2060,8 @@ template {
     grid-column: span 4;
   }
   .footer__input {
-    min-width: 240px;
+    width: 49%;
+    min-width: auto;
   }
 }
 
