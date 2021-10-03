@@ -372,9 +372,9 @@
           subscribe to our
           <span class="subscription__strong">Newsletter</span>
         </h2>
-        <form action="#" class=" subscription__form">
-          <input type="text" class="subscription__input" placeholder="Your email address">
-          <button class="subscription__button">
+        <form action="send.php" method="POST" class=" subscription__form">
+          <input type="text" class="subscription__input" placeholder="Your email address" name="email">
+          <button class="subscription__button" type="submit">
             Send
           </button>
         </form>
@@ -546,9 +546,9 @@
         <div class="social-networks footer__social-networks">
           <h3 class="footer__title footer__title_inline">Social Network</h3>
           <div class="social-networks__icons">
-            <a href="#" target="_blank"><img src="img/fb.svg" alt="Icon: Facebook"></a>
-            <a href="#" target="_blank"><img src="img/yt.svg" alt="Icon: YouTube"></a>
-            <a href="#" target="_blank"><img src="img/inst.svg" alt="Icon: Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/fb.svg" alt="Icon: Facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="img/yt.svg" alt="Icon: YouTube"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/inst.svg" alt="Icon: Instagram"></a>
           </div>
         </div>
 
@@ -571,10 +571,10 @@
 
         <div class="footer__contacts-form">
           <h3 class="footer__title footer__form-title">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*">
-            <input type="text" class="footer__input" placeholder="Phone Number*">
-            <textarea cols="30" rows="10" class="footer__massage" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
+            <textarea cols="30" rows="10" class="footer__massage" placeholder="Message" name="message"></textarea>
             <button class="footer__button" type="submit">Send</button>
             <span class="footer__decryption">* Required Fields</span>
           </form>
