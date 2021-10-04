@@ -84,7 +84,7 @@
   <nav class="breadcrumb">
     <div class="container">
       <ul class="breadcrumb-list">
-        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Home</a></li>
+        <li class="breadcrumb-list__item"><a href="index.html" class="breadcrumb-list__link">Home</a></li>
         <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Flash Offers</a></li>
         <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
       </ul>
@@ -102,6 +102,7 @@
             </h1>
           </div>
           <p class="hotel-description">Something went wrong. Please try again later!</p>
+          <a class="return" href="index.html">Return</a>
         </div>
 
       
@@ -114,11 +115,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-
+  
         <a href="index.html" class="footer__logo">
           <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="footer__logo-image">
         </a>
-
+  
         <div class="categories footer__categories">
           <h3 class="footer__title categories__title">All categories</h3>
           <ul class="footer-list">
@@ -132,7 +133,7 @@
             <li class="footer-list__item"><a href="#" class="footer-list__link">Rodrigues</a></li>
           </ul>
         </div>
-
+  
         <div class="additional footer__additional">
           <h3 class="footer__title">Additional information</h3>
           <ul class="footer-list">
@@ -144,7 +145,7 @@
             <li class="footer-list__item"><a href="#" class="footer-list__link">Promote your Business on BTP</a></li>
           </ul>
         </div>
-
+  
         <div class="legal footer__legal">
           <h3 class="footer__title">Legal information</h3>
           <ul class="footer-list">
@@ -154,7 +155,7 @@
             <li class="footer-list__item"><a href="#" class="footer-list__link">Privacy</a></li>
           </ul>
         </div>
-
+  
         <div class="social-networks footer__social-networks">
           <h3 class="footer__title footer__title_inline">Social Network</h3>
           <div class="social-networks__icons">
@@ -163,37 +164,44 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="img/inst.svg" alt="Icon: Instagram"></a>
           </div>
         </div>
-
+  
         <div class="contacts footer__contacts">
           <h3 class="footer__title contacts__title">Contact Details</h3>
           <span class="contacts__text">Feel free to contact us by phone, email or by our contact form</span>
           <div class="contacts-wrapper">
             <img src="img/map-marker.svg" alt="Icon: map-marker" class="contacts__icon">
             <span class="contacts__address">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
-            <img src="img/phone.svg" alt="Icon: phone" class="contacts__icon"> 
+            <img src="img/phone.svg" alt="Icon: phone" class="contacts__icon">
             <div class=" phones contacts__phones">
               <span>Tel (business hours) : <a href="tel:2691500">269&nbsp;1500</a></span>
-              <span>Tel (hotline) Monday - Saturday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am – 20:00 pm)</span>
-              <span>Tel (hotline) Sunday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am – 14:00 pm)</span>
+              <span>Tel (hotline) Monday - Saturday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am –
+                20:00
+                pm)</span>
+              <span>Tel (hotline) Sunday: <a href="tel:52566138">52&#8209;56&#8209;61&#8209;38</a> (08:00 am – 14:00
+                pm)</span>
             </div>
             <img src="img/email.svg" alt="Icon: email" class="contacts__icon">
-            <a href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+            <a class="contacts__email" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
           </div>
         </div>
-
+  
         <div class="footer__contacts-form">
           <h3 class="footer__title footer__form-title">Send us a message</h3>
           <form action="send.php" method="POST" class="form footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+            </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__decryption">* Required Fields</span>
           </form>
         </div>
-
+  
       </div>
-
+  
       <div class="footer-info footer__info">
         <ul class="footer-info__list">
           <li class="footer-info__item"><a href="#" class="footer-info__link">Disclaimer</a></li>
@@ -205,7 +213,10 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
