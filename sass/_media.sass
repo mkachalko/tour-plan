@@ -192,11 +192,8 @@
           left: 0
           bottom: 0
           z-index: 99
-  .navbar-top
-    &__search, &__user
-      &_mobile
-        &_hidden
-          display: none
+  .navbar-bottom
+    padding: 31px 0
     &__search
       margin-bottom: 19px
       margin-right: 0
@@ -338,6 +335,7 @@
       &-group
         width: 49%
         min-width: auto
+
 @media (max-width: 575.98px)
   .slider
     height: 320px
@@ -408,7 +406,6 @@
         align-items: end
       &__description
         grid-template-rows: 1fr 1fr
-        grid-template-columns: 60% 40%
       &__guests
         justify-self: end
   .footer
@@ -509,7 +506,6 @@
     &-card
       &__description
         grid-template-rows: 1fr 1fr 1fr
-        grid-template-columns: 100%
       &__guests
         justify-self: start
   .subscription
@@ -522,8 +518,9 @@
     &:hover
       box-shadow: 0 0 10px 2px yellow
   button
-    &:hover
-      background-color: #0b9c3b
+    &:not(.arrow)
+      &:hover
+        background-color: #0b9c3b
 @media (max-width: 991.98px) and (orientation: landscape)
   .modal
     &__dialog

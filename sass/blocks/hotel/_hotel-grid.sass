@@ -8,19 +8,21 @@
     justify-content: space-between
   &__slider
     margin-left: 2px
+
 .hotel-swiper
   width: 100%
   height: 100%
   margin: 0
   border-radius: 8px
-  &::after
-    content: ''
-    width: 100%
-    height: 100%
-    position: absolute
-    top: 0
-    z-index: 10
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+  &__slide
+    &::after
+      content: ''
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      z-index: 10
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .slider
   position: relative
   width: 728px
@@ -29,6 +31,7 @@
     width: 100%
     height: 100%
     object-fit: cover
+
   &-button
     position: absolute
     top: 50%
