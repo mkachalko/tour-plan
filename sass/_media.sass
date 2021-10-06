@@ -12,6 +12,10 @@
   .packages
     &-wrapper
       gap: 20px
+  .footer
+    &__input
+      &-group
+        width: 48%
 
 @media (max-width: 991.98px)
   .container
@@ -39,26 +43,32 @@
   .breadcrumb
     &-list
       padding: 19px 0 18px
-  .hotel-grid
-    flex-direction: column
-    padding-bottom: 60px
-    &__wrapper
-      flex-direction: row
-      width: 100%
-    &__slider
-      margin-bottom: 30px
-      margin-left: 0
+  .hotel
+    &-info
+      &__name
+        margin-bottom: 0
+    &-grid
+      flex-direction: column
+      padding-bottom: 60px
+      &__wrapper
+        flex-direction: row
+        width: 100%
+      &__slider
+        margin-bottom: 30px
+        margin-left: 0
   .slider
     width: 100%
   .booking, .map
     width: 340px
     height: 210px
   .booking
-    padding: 28px 22px 26px 23px
+    padding: 29px 22px 26px 23px
   .subscription
-    padding: 92px 0 93px
+    padding: 93px 0
     &__wrapper
       width: 100%
+    &__strong
+      margin-top: -1px
   .reviews
     padding-bottom: 60px
     &__title
@@ -103,7 +113,7 @@
   .footer
     padding: 73px 0 33px
     &-wrapper
-      grid-template: auto 36px auto 61px auto 59px / minmax(24%, 200px) minmax(38%, 298px) 42px 1fr
+      grid-template: auto 36px auto 60px auto 58px / minmax(24%, 200px) minmax(38%, 298px) 41px 1fr
       grid-auto-rows: auto
       row-gap: 0
     &__categories,
@@ -113,8 +123,8 @@
     &__logo
       grid-row: span 1
       &-image
-        width: 104px
-        height: 120px
+        width: 107px
+        height: 122px
     &__social-networks
       align-self: center
       margin-left: -13px
@@ -128,18 +138,24 @@
         grid-column: span 3
     &__form
       &-title
-        margin-bottom: 33px
+        margin-bottom: 34px
     &__input
       padding: 19px 23px 18px
       &-group
         margin-bottom: 15px
+        width: 255px
     &__info
-      margin-top: 63px
+      margin-top: 64px
     &-info
       justify-content: flex-start
+      &__list
+        padding-left: 2px
   .contacts
     &__title
-      margin-top: 0
+      margin-top: -1px
+      margin-left: 0
+    &__text
+      margin-left: 0
     &-wrapper
       grid-template-columns: 45px 1fr
     &__icon
@@ -154,6 +170,7 @@
     margin-top: 70px
   .container
     width: 87%
+    padding-left: 0
   .header
     &-top
       &_mobile
@@ -400,9 +417,10 @@
       grid-template: auto / 1fr
       row-gap: 30px
     &__title
-      margin-bottom: 12px
+      margin-bottom: 14px
       &_inline
-        margin-bottom: 20px
+        margin-bottom: 22px
+        margin-top: -4px
     &__categories
       grid-row-start: 5
     &__additional
@@ -422,13 +440,13 @@
         grid-row-start: 7
     &__form
       &-title
-        margin-bottom: 13px
+        margin-bottom: 14px
         margin-top: 0
     &__input
       &-group
         margin-bottom: 15px
         width: 100%
-    &__massage
+    &__message
       margin-bottom: 15px
     &__decryption
       flex-basis: 100%
@@ -442,6 +460,8 @@
       align-items: flex-start
       &__list
         margin-bottom: 10px
+        padding: 0
+        min-width: 100%
       &__image
         position: relative
   .categories
@@ -450,9 +470,15 @@
   .social-networks
     &__icons
       max-width: 85px
+  .legal
+    &__title
+      margin-top: -1px
   .contacts
     &__title
-      margin-bottom: 20px
+      margin-bottom: 23px
+      margin-top: -3px
+    &__text
+      margin-bottom: 19px
     &__icon
       padding-left: 3px
     &-wrapper

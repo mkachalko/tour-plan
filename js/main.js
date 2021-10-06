@@ -105,4 +105,6 @@ $(document).ready(function() {
     translation: {9: {pattern: /[0-9]/}}
   });
 
+  AOS.init();
+
 })

@@ -4,15 +4,15 @@
   color: #BDBDBD
   &-wrapper
     display: grid
-    grid-template: auto auto 43px auto / minmax(24%, 285px) minmax(25%, 286px) 31% 1fr
+    grid-template: auto auto 43px auto / minmax(24%, 285px) minmax(25%, 285px) 31% 1fr
     row-gap: 23px
   &__logo
     grid-row: span 2
     align-self: end
     max-width: max-content
     &-image
-      width: 166px
-      height: 192px
+      width: 162px
+      height: 190px
       padding-bottom: 12px
       padding-right: 10px
   &__title
@@ -48,6 +48,7 @@
       grid-column-start: 3
       grid-column: span 2
   &__form
+    align-items: flex-start
     &-title
       margin-top: 2px
       margin-bottom: 35px
@@ -63,6 +64,8 @@
   &__decryption
     font-weight: bold
     color: #E0E0E0
+    align-self: center
+    margin-top: 1px
   &__info
     margin-top: 102px
   &-info
@@ -94,7 +97,7 @@
   &__icons
     display: flex
     justify-content: space-between
-    min-width: 85px
+    min-width: 84px
 .contacts
   max-width: 493px
   font-style: normal
@@ -104,16 +107,18 @@
   &__title
     margin-top: 15px
     margin-bottom: 22px
+    margin-left: -4px
   &__text
     display: block
     margin-bottom: 22px
+    margin-left: -4px
   &-wrapper
     display: grid
     grid-template-columns: 41px 1fr
     row-gap: 21px
   &__icon
-    padding-top: 3px
-    padding-left: 4px
+    padding-top: 4px
+    padding-left: 3px
   &__email
     width: max-content
 .phones
