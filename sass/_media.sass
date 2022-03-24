@@ -532,10 +532,16 @@
       text-align: start
 @media (min-width: 992px)
   a
+    &:not(.scale)
+      transition: color 0.3s
+      &:hover
+        color: $primary
+  .scale
     &:hover
-      box-shadow: 0 0 10px 2px yellow
+      transform: scale(1.2)
   button
     &:not(.arrow)
+      transition: background-color 0.5s
       &:hover
         background-color: #0b9c3b
 @media (max-width: 991.98px) and (orientation: landscape)
