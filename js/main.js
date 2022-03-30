@@ -33,9 +33,9 @@ $(document).ready(function() {
 
   });
 
-  var menuButton = document.querySelector('.menu-button');
-  menuButton.addEventListener('click', function(){
-    document.querySelector('.header-bottom').classList.toggle('header-bottom_mobile_visible'),
+  var menuButton = $('.menu-button');
+  menuButton.on('click', function(){
+    $('.header-bottom').toggleClass('header-bottom_mobile_visible');
     body.toggleClass('lock');
   });
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
   }
   function closeModal(event) {
     
-    event.preventDefault()
+    event.preventDefault();
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
     body.removeClass('lock');
@@ -107,4 +107,4 @@ $(document).ready(function() {
 
   AOS.init();
 
-})
+});
